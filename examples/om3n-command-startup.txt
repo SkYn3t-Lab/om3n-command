@@ -1,0 +1,7 @@
+# om3n-command commands to run at every sign-in, one per line (see "om3n-command.ps1 startup"). Written by the app.
+gpu -FanCurve 30,23,50,38,67,53,85,68,95,100
+cpu -ControlId 0x22 -Value -90
+cpu -ControlId 0x4F -Value -90
+cpu -ControlId 0x30 -Value 125
+gpu -Setting POWER_PERCENTAGE -Value -10
+fan auto -QuietBelow 55 -TurboAbove 70 -Hysteresis 5
